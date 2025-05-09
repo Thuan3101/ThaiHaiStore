@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>THAI HAI LUXURY</title>
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+			integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- Logo hoặc banner (nếu có) -->
+		<img
+			src="images/ThaiHaiLuXury.png"
+			alt="Logo Thai Hai Store"
+			style="width: 120px; margin-top: 32px; margin-bottom: 12px"
+		/>
+		<h1>Welcome to THAI HAI LUXURY</h1>
+		<div class="social-links">
+			<!--Tạo ngân hàng Vietcombank 
+Tran Thai Hai 
+1018342964
+Hải
+Chi Nhanh Tay Ninh -->
+			<div>
+				<a
+					href="#"
+					class="social-link"
+					data-qr="images/BankNganHang.jpg"
+					data-bank="Vietcombank<br>Chủ TK: Trần Thái Hải<br>Số TK: 1018342964<br>Chi nhánh: Tây Ninh"
+					>Ngân Hàng</a
+				>
+			</div>
+			<div>
+				<a
+					href="https://www.facebook.com/share/12LN5oALhqN/?mibextid=wwXIfr"
+					class="social-link"
+					data-qr="images/facebook.jpg"
+					target="_blank"
+					>Facebook: Trần Thái Hải</a
+				>
+			</div>
+			<div>
+				<a
+					href="https://www.facebook.com/share/195z2j3QW3/?mibextid=wwXIfr"
+					class="social-link"
+					data-qr="images/page.jpg"
+					target="_blank"
+					>Page: THAI HAI LUX</a
+				>
+			</div>
+
+			<div>
+				<a
+					href="https://www.tiktok.com/@thaihailuxury79?_t=ZS-8wA01ruhKrP&_r=1"
+					class="social-link"
+					data-qr="images/tiktok.jpg"
+					target="_blank"
+					>TikTok: THAI HAI LUXURY</a
+				>
+			</div>
+
+			<div>
+				<a
+					href="https://zalo.me/g/rjctcz583"
+					class="social-link"
+					data-qr="images/ZaloGroup.jpg"
+					target="_blank"
+					>Nhóm Zalo</a
+				>
+			</div>
+		</div>
+		<!-- Popup QR code -->
+		<div id="qr-popup" class="qr-popup-overlay" style="display: none">
+			<div class="qr-popup-content">
+				<span class="qr-popup-close" id="qr-popup-close">&times;</span>
+				<img id="qr-popup-img" src="" alt="QR Code" />
+				<a id="qr-popup-link" href="#" target="_blank" class="open-link-btn"
+					>Mở liên kết</a
+				>
+			</div>
+		</div>
+		<script src="scripts/main.js"></script>
+	</body>
+</html>

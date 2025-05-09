@@ -1,0 +1,145 @@
+/* Nền tổng thể */
+body {
+	font-family: 'Segoe UI', Arial, sans-serif;
+	background: linear-gradient(135deg, #f7f7f7 60%, #e0e7ff 100%);
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	min-height: 100vh;
+}
+
+/* Tiêu đề */
+h1 {
+	color: #2d3e50;
+	margin-top: 32px;
+	font-size: 2.4rem;
+	letter-spacing: 1.5px;
+	font-weight: 800;
+	text-shadow: 0 2px 12px rgba(45, 62, 80, 0.1);
+}
+
+/* Logo */
+img[alt='Logo Thai Hai Store'] {
+	border-radius: 18px;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+	margin-bottom: 18px;
+}
+
+/* Danh sách mạng xã hội */
+.social-links {
+	margin: 40px 0 24px 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 28px;
+}
+
+.social-link {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin: 0;
+	padding: 18px 36px;
+	background: #fff;
+	border-radius: 16px;
+	box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+	text-decoration: none;
+	color: #2d3e50;
+	font-weight: 700;
+	font-size: 1.15rem;
+	transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.15s;
+	border: 2px solid #e0e0e0;
+	position: relative;
+	letter-spacing: 0.5px;
+}
+.social-link:hover {
+	background: linear-gradient(90deg, #2d3e50 60%, #4f8cff 100%);
+	color: #fff;
+	box-shadow: 0 8px 24px rgba(45, 62, 80, 0.18);
+	border-color: #4f8cff;
+	transform: translateY(-3px) scale(1.04);
+}
+
+/* Popup overlay */
+.qr-popup-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.45);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
+}
+
+/* Popup content */
+.qr-popup-content {
+	background: #fff;
+	padding: 36px 28px 28px 28px;
+	border-radius: 22px;
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+	text-align: center;
+	position: relative;
+	min-width: 280px;
+	animation: popupShow 0.25s;
+}
+@keyframes popupShow {
+	from {
+		transform: scale(0.85);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+.qr-popup-content img {
+	width: 80px;
+	height: 80px;
+	border-radius: 12px;
+	margin-bottom: 16px;
+	box-shadow: 0 2px 12px rgba(79, 140, 255, 0.12);
+	background: #f7f7f7;
+	padding: 6px;
+	transition: box-shadow 0.2s, transform 0.2s;
+	object-fit: cover;
+	display: inline-block;
+}
+.qr-popup-content img:hover {
+	box-shadow: 0 6px 18px rgba(79, 140, 255, 0.18);
+	transform: scale(1.08);
+}
+.qr-popup-close {
+	position: absolute;
+	top: 10px;
+	right: 18px;
+	font-size: 2.2rem;
+	color: #888;
+	cursor: pointer;
+	font-weight: bold;
+	transition: color 0.2s;
+}
+.qr-popup-close:hover {
+	color: #4f8cff;
+}
+.open-link-btn {
+	background: #fff;
+	border: 2px solid #4f8cff;
+	border-radius: 10px;
+	padding: 12px 28px;
+	color: #4f8cff;
+	text-decoration: none;
+	font-size: 1.08rem;
+	transition: background 0.2s, color 0.2s;
+	display: inline-block;
+	font-weight: 700;
+	margin-top: 10px;
+	letter-spacing: 0.5px;
+	box-shadow: 0 2px 8px rgba(79, 140, 255, 0.08);
+}
+.open-link-btn:hover {
+	background: #4f8cff;
+	color: #fff;
+}
